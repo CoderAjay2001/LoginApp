@@ -43,7 +43,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8021/save", formData);
+      const response = await axios.post("http://13.127.74.58:8021/save", formData);
       console.log("Registration successful:", response.data);
       setFormData({
         fname: "",
