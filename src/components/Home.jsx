@@ -94,7 +94,7 @@ const Home = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://13.127.74.58:8021/homepage/booktable",
+        "http://13.127.74.58:8022/homepage/booktable",
         formData
       );
       console.log("Table booked", response.data);
@@ -114,7 +114,7 @@ const Home = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://13.127.74.58:8021/homepage/orders",
+        "http://13.127.74.58:8022/homepage/orders",
         orderData
       );
       console.log("Order Placed", response.data);
